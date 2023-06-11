@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="./images/favicon-32x32.png" type="image/png" />
+    <link rel="stylesheet" href="main.css">
+    <title>Frontend Mentor | Tip Calculator App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top"><img src="./images/logo.svg" alt=""></div>
+        <div class="bottom">
+            <div class="left">
+                <div class="bill"><label class="labelbill" for="bill">Bill</label> <input name="billinp" class="billinp" type="number" value="0"></div>
+                <div class="tip">
+                    <p>Select Tip %</p>
+                    <div class="btns">
+                        <button class="percentage">5%</button>
+                        <button class="percentage">10%</button>
+                        <button class="percentage active">15%</button>
+                        <button class="percentage">25%</button>
+                        <button class="percentage">50%</button><div class="customInp">
+                        <input name="tip" class="tipinp"  type="number" placeholder="Custom"></div>
+                    </div>
+                </div>
+                <div class="people">
+                    <div class="labels"><label class="peoplelabel" for="people">Number of People</label> <label
+                            for="people" class="error hide">Can't be zero</label></div> <input name="peopleInp" class="peopleInp" type="number" value="1">
+                </div>
+            </div>
+            <div class="right">
+                <div class="top-right">
+                    <div class="amount">
+                        <div class="left-amount">
+                            <p>Tip Amount</p>
+                            <p>/ person</p>
+                        </div>
+                        <div class="value">$0.00</div>
+                    </div>
+                    <div class="total">
+                        <div class="left-total">
+                            <p>Total</p>
+                            <p>/ person</p>
+                        </div>
+                        <div class="value">$0.00</div>
+                    </div>
+                </div>
+                <div class="btn"><button id="btn-reset" type="reset">Reset</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
