@@ -26,7 +26,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 5rem;
     max-width: 56%;
 }
 .container .top {
@@ -36,18 +36,18 @@ body {
 .container .bottom{
     background-color: var(--White);
     display: flex;
-    border-radius: 15px;
-    padding: 25px 50px 25px 25px;    
-    gap: 30px;
+    border-radius: 0.9375rem;
+    padding: 1.5625rem 3.125rem 1.5625rem 1.5625rem;    
+    gap: 1.875rem;
 }
 .bottom .right {
     background-color: var(--Very-dark-cyan);
-    border-radius: 15px;
-    padding: 30px;
+    border-radius: 0.9375rem;
+    padding: 1.875rem;
     display: flex;
     flex-direction: column;
     min-width: 49%;
-    gap: 100px;
+    gap: 6.25rem;
     
 }
 .bottom .left {
@@ -62,7 +62,7 @@ body {
     gap: 0.3125rem;
 }
 .bill label {
-    font-size: 12.8px;
+    font-size: 0.8rem;
 }
 .bill input {
     background-color: var(--Very-light-grayish-cyan);
@@ -196,7 +196,7 @@ button:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width:37.5rem){
+@media screen and (max-width:600px){
     .container {
         padding: 0;
     }
