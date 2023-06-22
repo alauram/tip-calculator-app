@@ -37,9 +37,8 @@ body {
     background-color: var(--White);
     display: flex;
     border-radius: 15px;
-    padding: 25px;
+    padding: 25px 50px 25px 25px;    
     gap: 30px;
-    padding-right: 50px;
 }
 .bottom .right {
     background-color: var(--Very-dark-cyan);
@@ -197,3 +196,34 @@ button:hover {
     cursor: pointer;
 }
 
+@media screen and (max-width:600px){
+    .container {
+        padding: 0;
+    }
+    .bottom {
+        flex-direction: column;
+    }
+    .bottom .left {
+        min-width: 100%;
+    }
+    .bottom .right {
+        min-width: 100%;
+    }
+    .tip {
+        width: 100%;
+    }
+    .tip .btns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bottom .right {
+        gap: 30px;
+    }
+    .container .top {
+        padding-top: 60px;
+    }
+    .container .bottom {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 25px;
+    }
+}
